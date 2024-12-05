@@ -2,12 +2,12 @@
 questo esercizio fa parte delle esercitazioni del coding training organizzate da Boolean nel post-corso di full stack web developer.
 Nella consegna di questa settimana è prevista la realizzazione di una landing page.
 
-## indice
-1.[considerazioni_pre-progetto](#considerazioni-pre-progetto)
-2.[consegna](#consegna)
-3.[milestone](#milestone)
+## Indice
+1. [considerazioni_pre-progetto](#considerazioni-pre-progetto)
+2. [consegna](#consegna)
+3. [milestone](#milestone)
 
-## considerazioni pre-progetto
+## Considerazioni pre-progetto
 qui ci sono le mie considerazioni personali sul come voglio pianificare il lavoro su questo progetto in data 03/12/2024.
 Come tecnologia di sviluppo penso di utilizzare vite per l'impalcatura del progetto e utilizzare vue.js per la gestione del front end.
 Scelgo vue.js perchè è il framework che ho studiato durante il percorso di Boolean, al momento preferisco concentrarmi su questo framework per vederne effettivamente le potenzialità e dove riesco ad arrivare.
@@ -23,7 +23,7 @@ Considerando l'utilizzo di Vue.js, vado quindi a definire i componenti per la pa
 - AppFaq
 - AppFooter
 
-## CONSEGNA 
+## Consegna
 <aside>
 nome repo: landing-page-product
 

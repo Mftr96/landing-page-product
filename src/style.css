@@ -13,3 +13,14 @@ Line Height: 1.5
 Body: Montserrat
 Font Weight: 400
 Line Height: 1.24*/
+
+@import url(../node_modules/@fontsource/montserrat/index.css);
+@import url(../node_modules/@fontsource/poppins);
+
+body:not(h1,h2,h3,h4,h5,h6){
+font-family: 'Montserrat' ;    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins' ;
+}

@@ -1,27 +1,64 @@
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import helper from '../data/helper';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import { iconName } from '@fortawesome/free-brands-svg-icons/fa42Group';
+import myData from '../data/store';
 export default {
     name: "AppHeader",
     data() {
         return {
+            myData,
+
 
         };
     },
     methods: {
-        // logComponentName() {
-        //     console.log(`Component Name: ${this.$options.name}`);
-        // },
+
     },
     mounted() {
         helper.logComponentName(this.$options);
-        console.log(this.$options);
     },
 };
 </script>
 
 <template>
-    <font-awesome-icon :icon="['fas', 'pen']" />
-    <h1>aaaa</h1>
+    <header class="row justify-content-between">
+        <!-- LOGO -->
+        <div class="col-2">
+            <img src="../assets/fromDesigner/imgs/logo.png" width="" alt="">
+        </div>
+        <!-- BOOTSTRAP OFFCANVAS BUTTON -->
+        <button class="btn  col-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+
+                    <pre v-for="link in myData.links">
+                        <li class="dropdown-item">{{ link }}</li>
+                    </pre>
+                </ul>
+            </div>
+        </div>
+
+    </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+    outline: 1px solid red;
+}
+
+button {
+    outline: 1px solid yellow;
+}
+</style>
