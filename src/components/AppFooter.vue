@@ -1,15 +1,11 @@
 <script>
+import myData from '../data/store';
 import helper from '../data/helper';
 export default {
     name: "AppFooter",
     data() {
         return {
-            socials: ['facebook',
-                'twitter',
-                'youtube',
-                'linkedin',
-                'instagram'],
-
+            myData,
         };
     },
     methods: {},
@@ -34,7 +30,7 @@ export default {
         <!-- SOCIAL ICON -->
         <div class="d-flex justify-content-center mb-3">
             <div class="d-flex justify-content between gap-3">
-                <i v-for="social in socials" :class="`fa-brands fa-${social}`"></i>
+                <i v-for="social in myData.socials" :class="`fa-brands fa-${social}`"></i>
             </div>
         </div>
 
@@ -43,6 +39,9 @@ export default {
     <footer class="d-flex  justify-content-center align-items-center">
         <p class="p-0 my-0 mx-auto ">&#169;BooLanding Product. Designed by Boolean</p>
     </footer>
+    
+    
+    
 
 </template>
 
@@ -58,4 +57,7 @@ i:not(.fa-solid .fa-paper-plane){
     border-radius: 25px;
     padding: 1rem;      
 };
+h3{
+    font-weight: 400;
+}
 </style>

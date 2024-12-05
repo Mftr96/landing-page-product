@@ -20,7 +20,7 @@ export default{
 <template>
     <section class="row">
         <!-- UP/LEFTDESCRIPTION -->
-        <div class="col-12">
+        <div class="col-12 col-lg-4">
             <div class="container">
                 <div class="text-center  mx-auto" v-for="(description,key) in myData.upDescriptionParagraphs">
                     <h3>{{ description.title }}</h3>
@@ -29,11 +29,11 @@ export default{
             </div>
         </div>
         <!-- DUCK IMAGE -->
-        <div class="col-12">
+        <div class="col-12 col-lg-4">
             <img src="../assets/fromDesigner/imgs/invisible.png" alt="">
         </div>
         <!-- DOWN/RIGHT DESCRIPTION -->
-        <div class="col-12">
+        <div class="col-12 col-lg-4">
             <div class="container">
                 <div class="text-center  mx-auto" v-for="(description,key) in myData.downDescriptionParagraphs">
                     <h3>{{ description.title }}</h3>

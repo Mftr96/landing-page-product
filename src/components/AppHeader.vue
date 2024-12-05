@@ -41,7 +41,7 @@ export default {
             <!-- OFFCANVAS LINK MENU -->
             <div class="offcanvas-body">
                 <ul>
-                    <li v-for="link in myData.links" class="dropdown-item mb-4">{{ link }}</li>
+                    <li v-for="link in myData.offcanvasLinks" class="dropdown-item mb-4">{{ link }}</li>
                 </ul>
             </div>
         </div>
@@ -50,11 +50,5 @@ export default {
 </template>
 
 <style scoped>
-header {
-    outline: 1px solid red;
-}
 
-button {
-    outline: 1px solid yellow;
-}
 </style>
