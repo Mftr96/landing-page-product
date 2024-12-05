@@ -20,8 +20,10 @@ export default {
         <div class="col-12 photo1" width="auto">
             <img src="../assets/fromDesigner/imgs/banner-image.png" width="auto" alt="">
         </div>
-
-        <div class="col-12 photo2" width="auto">
+        <div class="photo2">
+            <div>
+                <img class="img-background" src="../assets/fromDesigner/imgs/banner-bg.png" alt="">
+            </div>
             <div class="text-center duck-text my-0 mx-auto ">
                 <h3>Rubber Duck debuggings</h3>
                 <p>
@@ -30,44 +32,52 @@ export default {
                     chiarire il pensiero e individuare
                     errori nascosti.
                 </p>
-                <p>lorem*10</p>
-                <a class="btn " href="">ACQUISTALA SUBITO !</a>
+                <a class="btn" href="">ACQUISTALA SUBITO !</a>
             </div>
         </div>
+
+
 
     </section>
 
 </template>
 
 <style scoped>
-
 img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
-
-.photo1{
-    outline: 1px solid black;
+.img-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+section{
+    position: relative;
+}
+
 .photo2 {
-    background-image: url(../assets/fromDesigner/imgs/banner-bg.png);
-    background-size: 100% 100%;
-    background-position: 100%;
-    background-size: contain;
-    outline: 1px solid black;
-    
-   
-    
+    outline: 2px solid pink;
+
 }
-.duck-text{
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.duck-text {
     outline: 1px solid pink;
-   
+    position: relative;
+    z-index: 1;
+
+
 
 }
-a{
+
+a {
     outline: 1px solid black;
 }
-
 </style>

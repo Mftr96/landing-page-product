@@ -10,8 +10,6 @@ export default {
     data() {
         return {
             myData,
-
-
         };
     },
     methods: {
@@ -40,12 +38,10 @@ export default {
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <!-- OFFCANVAS LINK MENU -->
             <div class="offcanvas-body">
                 <ul>
-
-                    <pre v-for="link in myData.links">
-                        <li class="dropdown-item">{{ link }}</li>
-                    </pre>
+                    <li v-for="link in myData.links" class="dropdown-item mb-4">{{ link }}</li>
                 </ul>
             </div>
         </div>

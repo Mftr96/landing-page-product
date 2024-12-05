@@ -4,6 +4,11 @@ export default {
     name: "AppFooter",
     data() {
         return {
+            socials: ['facebook',
+                'twitter',
+                'youtube',
+                'linkedin',
+                'instagram'],
 
         };
     },
@@ -15,52 +20,42 @@ export default {
 </script>
 
 <template>
+    <!-- NEWSLETTER FORM -->
     <section class="">
         <h3 class="text-center mx-auto">Iscriviti per rimanere aggiornato</h3>
         <p class="text-center mx-auto mb-5">Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e novità
         </p>
         <form action="" method="post">
-            <div class="w-100 d-flex justify-content-center">
-                <input name="email" class="w-75" type="email" placeholder="Lascia la tua mail qui..."  id="">
-                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            <div class="w-100 row justify-content-center mx-auto">
+                <input class="col-11" name="email"  type="email" placeholder="Lascia la tua mail qui..." id="">
+                <button class="col-1" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
             </div>
         </form>
-        <div class="d-flex justify-content-center">
+        <!-- SOCIAL ICON -->
+        <div class="d-flex justify-content-center mb-3">
             <div class="d-flex justify-content between gap-3">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <i v-for="social in socials" :class="`fa-brands fa-${social}`"></i>
             </div>
         </div>
 
     </section>
-    <footer class="d-flex justify-content-center align-items-center">
-        <p class="mx-auto">&#169;BooLanding Product. Designed by Boolean</p>
+    <!-- FOOTER -->
+    <footer class="d-flex  justify-content-center align-items-center">
+        <p class="p-0 my-0 mx-auto ">&#169;BooLanding Product. Designed by Boolean</p>
     </footer>
 
 </template>
 
 <style scoped>
-i:not(.fa-paper-plane){
-    color:var(--money-color);
-    border: 1px solid grey;
-    border-radius: 25px;
-    padding: 1rem;
-}
 section {
-    outline: 1px solid pink;
-}
-
-h3 {
-    outline: 1px solid purple;
-}
-
-div {
-    outline: 1px solid crimson;
-}
-section{
     background-color: #f8f8f8;
 }
+i {
+    color: var(--newsletter-icon-color);
+}
+i:not(.fa-solid .fa-paper-plane){
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 1rem;      
+};
 </style>

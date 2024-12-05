@@ -37,8 +37,6 @@ export default {
     <AppAbout />
     <AppFaq/>
     <AppFooter />
- 
-
 </template>
 
 <style scoped></style>

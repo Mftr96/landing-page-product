@@ -1,7 +1,7 @@
 /* color variables */
 :root{
     --icon-color:#2E45CC;
-    --money-color:#04DF6C;
+    --newsletter-icon-color:#04DF6C;
     --text-color:#3D3A38;
 }
 
@@ -18,9 +18,14 @@ Line Height: 1.24*/
 @import url(../node_modules/@fontsource/poppins);
 
 body:not(h1,h2,h3,h4,h5,h6){
-font-family: 'Montserrat' ;    
+font-family: 'Montserrat' ;
+font-weight: 400;
+line-height: 1.24;  
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins' ;
+    font-weight: 400;
+    line-height: 1.5;  
 }
+
