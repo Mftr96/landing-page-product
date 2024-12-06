@@ -39,10 +39,6 @@ export default {
     <footer class="d-flex  justify-content-center align-items-center">
         <p class="p-0 my-0 mx-auto ">&#169;BooLanding Product. Designed by Boolean</p>
     </footer>
-    
-    
-    
-
 </template>
 
 <style scoped>

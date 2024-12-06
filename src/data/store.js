@@ -89,6 +89,24 @@ const data = {
         'youtube',
         'linkedin',
         'instagram'],
+    photos: [
+        {
+            path: "product-item1.png",
+            title: 'Cool-duck',
+            price: 15
+        },
+        {
+            path: "product-item2.png",
+            title: 'Classic-duck',
+            price: 29,
+        },
+        {
+        path: "product-item3.png",
+        title: 'Bat-duck',
+        price: 69,
+        },
+    ],
+
 };
 
 const myData = reactive(data);
