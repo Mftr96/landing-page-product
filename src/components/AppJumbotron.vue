@@ -20,7 +20,7 @@ export default {
         <div class="col-12 photo1" width="auto">
             <img src="../assets/fromDesigner/imgs/banner-image.png" width="auto" alt="">
         </div>
-        <div class="photo2">
+        <div class="col-12">
             <div>
                 <img class="img-background" src="../assets/fromDesigner/imgs/banner-bg.png" alt="">
             </div>
