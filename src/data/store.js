@@ -50,6 +50,21 @@ const data = {
         },
 
     ],
+    faqsDescriptions:[
+       {icon:'balloon', 
+        h : "100% Prodotto Di Qualità",
+        p:"Abbiamo anche la possibilità di ritiro direttamente dallo stagno"
+       },
+       {icon:'bag-heart',
+         h : "Spedizione Gratuita",
+        p:"Dal magazzino alla scrivania"
+       },
+       { 
+        icon:'wishlist',
+        h : "Rimborso Garantito",
+        p:"Ti rimborsiamo se la paperella fa quack"
+       },
+    ],
     testimonials: [
         {
             review: `La paperella di gomma è diventata il mio strumento di debugging preferito. Spiegare i problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere bug che altrimenti mi avrebbero fatto impazzire. È anche un ottimo antistress nelle giornate difficili!`,

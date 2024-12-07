@@ -6,17 +6,6 @@
     --newsletter-icon-color:#04DF6C;
     --text-color:#3D3A38;
 }
-
-/* Headers: Poppins
-Font Size: 16px
-Font Weight: 400
-Line Height: 1.5 
-
-Body: Montserrat
-Font Weight: 400
-Line Height: 1.24*/
-
-
 body:not(h1,h2,h3,h4,h5,h6){
 font-family: 'Montserrat' ;
 font-weight: 400;
@@ -31,4 +20,5 @@ h1,h2,h3,h4,h5,h6{
     font-weight:400;
     line-height: 1.5;  
 }
+
 
