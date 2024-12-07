@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-    <header class="row justify-content-between">
+    <header class="row justify-content-between sticky-top z-1">
         <!-- LOGO -->
         <div class="col-2">
             <img src="../assets/fromDesigner/imgs/logo.png" width="" alt="">
@@ -50,5 +50,9 @@ export default {
 </template>
 
 <style scoped>
+header{
+    background-color: white;
+}
+
 
 </style>
