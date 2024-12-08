@@ -22,13 +22,16 @@ export default {
 </script>
 
 <template>
-    <header class="row justify-content-between sticky-top z-1">
+    <header class="row justify-content-between sticky-top w-100 z-1">
         <!-- LOGO -->
         <div class="col-2">
             <img src="../assets/fromDesigner/imgs/logo.png" width="" alt="">
         </div>
+        <div class="d-none d-lg-flex  justify-content-between align-items-center col-lg-8">
+            <p v-for="link in myData.offcanvasLinks" class="p-0 m-0 ">{{ link }}</p>
+        </div>
         <!-- BOOTSTRAP OFFCANVAS BUTTON -->
-        <button class="btn  col-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        <button class="btn col-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight">
             <i class="fa-solid fa-bars"></i>
         </button>
