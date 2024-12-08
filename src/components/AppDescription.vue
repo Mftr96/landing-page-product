@@ -1,15 +1,15 @@
 <script>
 import myData from '../data/store';
 import helper from '../data/helper';
-export default{
-    name:"AppDescription",
-    data(){
-        return{
+export default {
+    name: "AppDescription",
+    data() {
+        return {
             myData,
         };
     },
-    methods:{},
-    mounted(){
+    methods: {},
+    mounted() {
         helper.logComponentName(this.$options);
 
     },
@@ -21,9 +21,9 @@ export default{
         <!-- UP/LEFTDESCRIPTION -->
         <div class="col-12  col-lg-4 ">
             <div class="container h-100 d-flex flex-column justify-content-between  ">
-                <div class="text-center   mx-auto" v-for="(description,key) in myData.upDescriptionParagraphs">
+                <div class="text-center mx-auto" v-for="(description, key) in myData.upDescriptionParagraphs">
                     <h3 class="">{{ description.title }}</h3>
-                    <p class="" >{{ description.p }}</p>
+                    <p class="">{{ description.p }}</p>
                 </div>
             </div>
         </div>
@@ -34,22 +34,20 @@ export default{
         <!-- DOWN/RIGHT DESCRIPTION -->
         <div class="col-12 col-lg-4">
             <div class="container h-100 d-flex flex-column justify-content-between">
-                <div class="text-center    mx-auto" v-for="(description,key) in myData.downDescriptionParagraphs">
+                <div class="text-center mx-auto" v-for="(description, key) in myData.downDescriptionParagraphs">
                     <h3 class="">{{ description.title }}</h3>
-                    <p  class="">{{ description.p }}</p>
+                    <p class="">{{ description.p }}</p>
                 </div>
             </div>
         </div>
     </section>
- 
+
 </template>
 
 <style scoped>
-img{
+img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
-
 </style>
-

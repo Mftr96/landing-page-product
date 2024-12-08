@@ -46,7 +46,7 @@ export default {
                     <use :xlink:href="`/icons.svg#${'star-fill'}`"></use>
                 </svg>  
             </div>
-            <p class="p-0 mt-2 ">{{ testimonial.author }}-{{ testimonial.date_review }}</p>
+            <p class="p-0 mt-2 ">{{ testimonial.author }} - {{ testimonial.date_review }}</p>
         </SwiperSlide>
     </Swiper>
 
@@ -77,9 +77,7 @@ img {
     object-fit: cover;
 }
 
-.mySwiper {
-    outline: 1px solid pink
-}
+
 
 .icon {
     width: 24px;
