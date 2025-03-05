@@ -35,10 +35,11 @@ export default {
 </script>
 
 <template>
+    <!-- TESTIMONIAL CAROUSEL -->
     <h3 class="text-center">Cosa ne pensano i nostri sviluppatori</h3>
     <Swiper :modules="modules" :slides-per-view="1" :pagination="paginationOptions" :loop="true"
         :Autoplay="{ delay: 3000 }" class="mySwiper text-center ">
-        <SwiperSlide class=" w-100 mb-4 d-flex flex-column justify-content-center align-items-center "
+        <SwiperSlide class="  d-flex flex-column justify-content-center align-items-center "
             v-for="(testimonial) of myData.testimonials">
             <h4 class="p-0">{{ testimonial.review }}</h4>
             <div class="p-0">
@@ -49,11 +50,11 @@ export default {
             <p class="p-0 mt-2 ">{{ testimonial.author }} - {{ testimonial.date_review }}</p>
         </SwiperSlide>
     </Swiper>
-
+<!-- IMAGE CAROUSEL -->
     <h3 class="text-center">La collezione di paperelle</h3>
     <p class="text-center">Una paperella per ogni stile di programmazione</p>
-    <Swiper :modules="modules" :slides-per-view="1" :pagination="paginationOptions" :loop="true"
-        :Autoplay="{ delay: 3000 }" class="mySwiper ">
+    <Swiper :modules="modules"  :pagination="paginationOptions" :loop="true"
+        :Autoplay="{ delay: 3000 }" class="mySwiper z-0">
         <SwiperSlide class="  mb-4 d-flex flex-column justify-content-center align-items-center "
             v-for="(photo) of myData.photos">
             <img class="mb-2" :src="`src/assets/fromDesigner/imgs/${photo.path}`" height="" width="" alt="">
@@ -69,9 +70,6 @@ export default {
 </template>
 
 <style scoped>
-section {
-    outline: 1px solid crimson
-}
 
 img {
     object-fit: cover;

@@ -3,6 +3,11 @@ import { reactive } from 'vue';
 const data = {
     //link foto card per il ciclo v-for
     offcanvasLinks: ['Home', 'I punti di forza', 'Recensioni', 'Paperelle', 'FAQs', 'Newsletter'],
+    jumbotron:[
+        {h:"Rubber Duck debuggings"},
+        {p:"Spiegare il codice ad una paperella di gomma aiuta i programmatori a chiarire il pensiero e individuare errori nascosti."},
+        {a:"ACQUISTALA SUBITO !"},
+    ],
     upDescriptionParagraphs: [
         {
             title: 'Lunga durata della batteria ',

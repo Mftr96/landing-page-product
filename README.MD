@@ -6,6 +6,7 @@ Nella consegna di questa settimana è prevista la realizzazione di una landing p
 1. [considerazioni_pre-progetto](#considerazioni-pre-progetto)
 2. [consegna](#consegna)
 3. [milestone](#milestone)
+4. [prossimamente-sul-piccolo-schermo](#roadmap)
 
 ## Considerazioni pre-progetto
 qui ci sono le mie considerazioni personali sul come voglio pianificare il lavoro su questo progetto in data 03/12/2024.
@@ -65,3 +66,17 @@ Aggiungi interattività alla pagina utilizzando JavaScript. In particolare, impl
 Lo scopo principale di una landing page è quello di catturare i contatti dei visitatori, quindi nel nostro caso bisognerebbe far funzionare il form di iscrizione alla newsletter, provaci.
 
 Buon kata! 🥷
+
+
+## Roadmap
+🏳️: da fare 
+🔨:in corso d'opera
+☑️:fatto
+
+- sistemare sezione AppJumbotron (immagini)🏳️
+- bonus: script php invio mail🏳️
+- sistemazione layout form mail 🏳️
+- hover navbar 🏳️
+- sistemare layout swiper 🏳️
+- documentare meglio com estrutturi il layout di una sezione, magari facendo dei semplici disegni 🏳️
+- cambiare i nomi nello store.js mettendo i nomi dei componenti nei quali vengono usati 🏳️

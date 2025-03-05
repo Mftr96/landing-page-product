@@ -25,14 +25,9 @@ export default {
                 <img class="img-background" src="../assets/fromDesigner/imgs/banner-bg.png" alt="">
             </div>
             <div class="text-center duck-text my-0 mx-auto ">
-                <h3>Rubber Duck debuggings</h3>
-                <p>
-                    Spiegare il codice ad una paperella di
-                    gomma aiuta i programmatori a
-                    chiarire il pensiero e individuare
-                    errori nascosti.
-                </p>
-                <a class="btn" href="">ACQUISTALA SUBITO !</a>
+                <h3>{{myData.jumbotron[0].h}}</h3>
+                <p>{{ myData.jumbotron[1].p }}</p>
+                <a class="btn" href="">{{myData.jumbotron[2].a}}</a>
             </div>
         </div>
 

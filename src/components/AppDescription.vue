@@ -19,8 +19,8 @@ export default {
 <template>
     <section class="row">
         <!-- UP/LEFTDESCRIPTION -->
-        <div class="col-12  col-lg-4 ">
-            <div class="container h-100 d-flex flex-column justify-content-between  ">
+        <div class="col-12  col-lg-4">
+            <div class="container h-100 d-flex flex-column justify-content-between">
                 <div class="text-center mx-auto" v-for="(description, key) in myData.upDescriptionParagraphs">
                     <h3 class="">{{ description.title }}</h3>
                     <p class="">{{ description.p }}</p>
@@ -36,7 +36,7 @@ export default {
             <div class="container h-100 d-flex flex-column justify-content-between">
                 <div class="text-center mx-auto" v-for="(description, key) in myData.downDescriptionParagraphs">
                     <h3 class="">{{ description.title }}</h3>
-                    <p class="">{{ description.p }}</p>
+                    <p class="">{{ description.p}}</p>
                 </div>
             </div>
         </div>
